@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>The Truth</title>
+  <title>Monolith Universe</title>
 
   <style>
     body {
@@ -69,21 +69,21 @@
     var cube = new THREE.Mesh(cGeometry, cubeMaterial);
     scene.add(cube);
 
-    // Create a monolith.
-    //var mGeometry = new THREE.BoxGeometry(1, 2, 1);
-    //var monolithMaterials =
-    //[
-    //  new THREE.MeshBasicMaterial({color: 0x000000, wireframe:false}),
-    //  new THREE.MeshBasicMaterial({color: 0x000000, wireframe:false}),
-    //  new THREE.MeshBasicMaterial({color: 0x000000, wireframe:false}),
-    //  new THREE.MeshBasicMaterial({color: 0x000000, wireframe:false}),
-    //  new THREE.MeshBasicMaterial({color: 0x000000, wireframe:false}),
-    //  new THREE.MeshBasicMaterial({color: 0x000000, wireframe:false})
-    //]
+    Create a monolith.
+    var mGeometry = new THREE.BoxGeometry(1, 2, 1);
+    var monolithMaterials =
+    [
+     new THREE.MeshBasicMaterial({color: 0x000000, wireframe:false}),
+     new THREE.MeshBasicMaterial({color: 0x000000, wireframe:false}),
+     new THREE.MeshBasicMaterial({color: 0x000000, wireframe:false}),
+     new THREE.MeshBasicMaterial({color: 0x000000, wireframe:false}),
+     new THREE.MeshBasicMaterial({color: 0x000000, wireframe:false}),
+     new THREE.MeshBasicMaterial({color: 0x000000, wireframe:false})
+    ]
 
-    //var monolithMaterial = new THREE.MeshFaceMaterial(monolithMaterials);
-    //var monolith = new THREE.Mesh(mGeometry, monolithMaterial);
-    //scene.add(monolith);
+    var monolithMaterial = new THREE.MeshFaceMaterial(monolithMaterials);
+    var monolith = new THREE.Mesh(mGeometry, monolithMaterial);
+    scene.add(monolith);
 
     // Create the Earth.
     var eGeometry = new THREE.SphereGeometry(0.5, 32, 32);
